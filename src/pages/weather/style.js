@@ -47,10 +47,20 @@ export const WeatherStyled = styled.div`
   .show{
     width: 100%;
     height: 200px;
+    .refresh{
+      width: 50%;
+      height: 150px;
+      margin: 0 auto;
+      background: url(${props => (require(`../../assets/img/refresh.png`).default)});
+      background-position:center center;
+      background-size: 75%;
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
     .img{
       width: 100%;
       height: 100px;
-      background: url(${require('../../assets/img/thunderStorm.png').default});
+      background: url(${props => require(`../../assets/img/${props.weather.img}`).default});
       background-position:center center;
       background-size: 40%;
       background-repeat: no-repeat;
@@ -61,8 +71,8 @@ export const WeatherStyled = styled.div`
       font-size: 20px;
       justify-content: space-around;
     }
-  }
-  .weathername{
-    letter-spacing: 1px;
+    .weathername{
+      letter-spacing: 1px;
+    }
   }
 `
