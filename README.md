@@ -21,7 +21,7 @@ yarn install
 yarn start
 ```
 
-## 5. 打开url：`http:localhost:3000`
+## 5. 打开url：`http://localhost:3000`
 
 ## 项目用到的技术栈：
 1. reactJs
