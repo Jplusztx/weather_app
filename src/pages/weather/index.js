@@ -50,7 +50,6 @@ export default memo(function WeatherPage() {
     </div>
     )
   }
-  console.log("city", city)
   return (
     <WeatherPageStyled className="center">
       <div className="left arrow" onClick={decrement}></div>

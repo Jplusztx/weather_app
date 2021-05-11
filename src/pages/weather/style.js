@@ -62,7 +62,7 @@ export const WeatherStyled = styled.div`
       height: 100px;
       background: url(${props => require(`../../assets/img/${props.weather.img}`).default});
       background-position:center center;
-      background-size: 40%;
+      background-size: 35%;
       background-repeat: no-repeat;
     }
     .temperature{
